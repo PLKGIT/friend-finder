@@ -10,11 +10,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/PLKGIT/friend_finder.git"
+    "url": "git+https://github.com/PLKGIT/friend-finder.git"
   },
   "keywords": [
     "node",
-    "express"
+    "express",
+    "path"
   ],
   "author": "Pam Kelly",
   "license": "ISC",
