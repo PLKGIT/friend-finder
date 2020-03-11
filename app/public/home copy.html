@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Friend Finder</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+  <div class="container"></div>
+    <div class="jumbotron bg-info text-white text-center">
+      <h1 class="text-center"><span class="fa fa-users"></span>Friend Finder</h1>
+      <hr>
+      <a href="/survey"><button class="btn btn-warning text-center"><span class="fa fa-plus"></span> Finder
+          Survey</button></a>
+    </div>
+  </div>
+  <div class="container">
+    <div class='col'>
+      <span id="friendsList"></span>
+    </div>
+  </div>
+
+  </div>
+  </div>
+  <footer class="footer mt-4">
+    <div class="container">
+      <a href="/api/friends">API Friends</a>
+    </div>
+  </footer>
+  <script type="text/javascript">
+    function runFriendsQuery() {
+
+      $.ajax({ url: "/api/friends", method: "GET" })
+        .then(function (friends) {
+          for (var i = 0; i < friends.length; i++) {
+            var friendImage = "<img src='" + friends[i].photo + "' class='card-img-top'>";
+            var friendName = friends[i].name;
+            var friendsList = $("#friendsList");
+            var cardItem = $("<div class='card mb-3 text-center rounded-top' style='width: 15rem;'>");
+            cardItem.append(
+              $(friendImage),
+              $("<div class='card-body'>"),
+              $("<h4 class='card-title'>").text(friendName),
+              $("</h4></div></div>")
+            );
+            friendsList.append(cardItem);
+          }
+        });
+    }
+
+    // Run Query
+    // ==========================================
+    runFriendsQuery();
+  </script>
+</body>
+
+</html>

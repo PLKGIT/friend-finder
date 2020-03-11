@@ -12,7 +12,264 @@
 </head>
 
 <body>
-    <h1>Survey</h1>
+    <div class="container">
+        <div class="jumbotron bg-primary text-white text-center">
+            <h1 class="text-center"><span class="fa fa-users"></span> Friend Finder Survey</h1>
+            <hr>
+            <a href="/home"><button class="btn btn-warning text-center"><span class="fa fa-home"></span>
+                    Home</button></a>
+        </div>
+    </div>
+    <div class="footer mt-4">
+        <div class="container">
+            <a href="/api/friends" target="_blank">API Friends List</a> | <a
+                href="https://github.com/PLKGIT/friend-finder" target="_blank">GitHub Repo</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2 class="text-center text-info">Tell Us About Yourself</h2>
+        <hr>
+    </div>
+    <div class="container">
+        <form id="ffsurvey">
+            <div class="form-group row">
+                <label for="name" class="col-lg-4 font-weight-bold col-form-label-lg">Your Name
+                    (required)</label>
+                <input type="text" id="name" class="form-control col-lg-8" required>
+            </div>
+            <div class="form-group row">
+                <label for="name" class="col-lg-4 font-weight-bold col-form-label-lg">Link to Your Photo
+                    (required)</label>
+                <input class="form-control col-lg-8" type="text" id="photo" required>
+            </div>
+
+            <div class="form-group row">
+                <label for="q1" class="col-lg-4 font-weight-bold col-form-label-lg text-primary">01. I like going to the
+                    movies:</label>
+                <select class="form-control col-lg-8" id="q1">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group row">
+                <label for="q2" class="col-lg-4 font-weight-bold col-form-label-lg text-primary">02. I like going to
+                    plays:</label>
+                <select class="form-control col-lg-8" id="q2">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group row">
+                <label for="q3" class="col-lg-4 font-weight-bold col-form-label-lg text-primary">03. I like going to
+                    sporting events:</label>
+                <select class="form-control col-lg-8" id="q3">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group row">
+                <label for="q4" class="col-lg-4 font-weight-bold col-form-label-lg text-primary">04. I like
+                    jazz:</label>
+                <select class="form-control col-lg-8" id="q4">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group row">
+                <label for="q5" class="col-lg-4 font-weight-bold col-form-label-lg text-primary">05. I like
+                    rock:</label>
+                <select class="form-control col-lg-8" id="q5">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group row">
+                <label for="q6" class="col-lg-4 font-weight-bold col-form-label-lg text-primary">06. I like classical
+                    music:</label>
+                <select class="form-control col-lg-8" id="q6">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group row">
+                <label for="q7" class="col-lg-4 font-weight-bold col-form-label-lg text-primary">07. I like pop
+                    music:</label>
+                <select class="form-control col-lg-8" id="q7">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group row">
+                <label for="q8" class="col-lg-4 font-weight-bold col-form-label-lg text-primary">08. I like the
+                    beach:</label>
+                <select class="form-control col-lg-8" id="q8">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group row">
+                <label for="q9" class="col-lg-4 font-weight-bold col-form-label-lg text-primary">09. I like the
+                    mountains:</label>
+                <select class="form-control col-lg-8" id="q9">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group row">
+                <label for="q10" class="col-lg-4 font-weight-bold col-form-label-lg text-primary">10. I like the
+                    desert:</label>
+                <select class="form-control col-lg-8" id="q10">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <br>
+            <p>
+                <button id="submit" type="submit" value="submit"
+                    class="btn btn-primary btn-lg btn-block">Submit</button>
+            </p>
+
+        </form>
+    </div>
+    <footer>
+        <h6 class="text-center">&copy; Copyright 2020 Pamela L. Kelly</h6>
+    </footer>
+
+    <!--jQuery JS-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!--Bootstrap JS file-->
+    <script type="text/javascript"
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!--My JS file -->
+    <!-- <script type="text/javascript" src="assets/javascript/app.js"></script> -->
+
+    <script>
+        $("#submit").on("click", function (event) {
+            event.preventDefault();
+
+            checkForm();
+
+            // Validate Form
+
+            function checkForm() {
+                var errors = false;
+                var elements = document.getElementById("ffsurvey").elements;
+                for (var i = 0, element; element = elements[i++];) {
+                    if (element.value === "") {
+                        errors = true;
+                    }
+                }
+
+                if (errors === true) {
+                   alert("Please complete all fields!")
+                } else {
+                    saveFriend();
+                }
+            }
+
+        });
+
+
+        function saveFriend() {
+
+            var newFriend = {
+                name: $("#name").val().trim(),
+                photo: $("#photo").val().trim(),
+                scores: [$("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(), $("#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10").val()]
+            };
+
+            $.post("/api/friends", newFriend)
+                .then(function (data) {
+                    console.log(data);
+                });
+
+            findFriend();
+        }
+
+        // Compare user info to other data
+
+        function findFriend() {
+
+            // Store form details
+            var myName = $("#name").val().trim();
+            var myScores = [$("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(), $("#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10").val()]
+            var bestName = "";
+            var bestDiff = 100;
+            var bestPhoto = "";
+
+            $.get("/api/friends")
+                .then(function (data) {
+                    console.log(data);
+                    for (i = 0; i < data.length; i++) {
+                        if (data[i].name !== myName) {
+                            var tally = 0;
+                            var diff = 0;
+                            var evalName = data[i].name;
+                            var evalPhoto = data[i].photo;
+                            var evalScores = data[i].scores;
+                            for (j = 0; j < myScores.length; j++) {
+                                diff = Math.abs(parseInt(myScores[j]) - parseInt(evalScores[j]));
+                                tally = tally + diff;
+                            }
+
+                            if (tally < bestDiff) {
+                                bestName = evalName;
+                                bestPhoto = evalPhoto;
+                                bestDiff = tally;
+                            }
+                        }
+
+                    }
+
+                    console.log("--Your Best Match--");
+                    console.log(bestName);
+                    console.log(bestPhoto);
+                    console.log(bestDiff);
+                });
+        }
+
+    </script>
 </body>
 
 </html>
