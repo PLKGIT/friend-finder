@@ -11,7 +11,6 @@ Homework #11
   * Heroku
   * HTML
   * Bootstrap
-  * Google Fonts
 
 ### Using Friend Finder
   * Navigate to the home page on Heroku.
