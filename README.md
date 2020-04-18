@@ -1,4 +1,4 @@
-Friend Finder
+# Friend Finder
 
 ## Overview
  Full-stack app takes the input from a user survey form, compares the stored survey answers from other users, and then displays the name and picture of the stored user with the best overall match.
