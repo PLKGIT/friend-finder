@@ -3,7 +3,7 @@ Friend Finder
 ## Overview
  Full-stack app takes the input from a user survey form, compares the stored survey answers from other users, and then displays the name and picture of the stored user with the best overall match.
 
-[](https://res.cloudinary.com/damplk/image/upload/v1583921191/portal/hw_friend_finder_amoeh5.png)
+![](https://res.cloudinary.com/damplk/image/upload/v1583921191/portal/hw_friend_finder_amoeh5.png)
 
 ### Using Friend Finder
   * Navigate to the home page on Heroku.
