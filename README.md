@@ -1,16 +1,9 @@
-# Node and Express: Friend Finder
-Homework #11
+Friend Finder
 
 ## Overview
- Build a compatibility-based "FriendFinder" application -- basically a dating app. This full-stack site will take in results from your users' surveys, then compare their answers with those from other users. The app will then display the name and picture of the user with the best overall match.
+ Full-stack app takes the input from a user survey form, compares the stored survey answers from other users, and then displays the name and picture of the stored user with the best overall match.
 
-### Technologies Used
-  * Node JS v12.13.0
-  * Express Node Package Manager (NPM) v4.17.1
-  * Path NPM v0.12.7
-  * Heroku
-  * HTML
-  * Bootstrap
+[](https://res.cloudinary.com/damplk/image/upload/v1583921191/portal/hw_friend_finder_amoeh5.png)
 
 ### Using Friend Finder
   * Navigate to the home page on Heroku.
@@ -21,24 +14,30 @@ Homework #11
   * Finally, the system opens a modal containing the name and picture of the survey taker's closest match.
   Note: There are links on the Home and Survey pages that allow the user to see the complete list of friends in JSON format.
 
-## Completed Assignment
+### Technologies
+  * Node JS v12.13.0
+  * Express Node Package Manager (NPM) v4.17.1
+  * Path NPM v0.12.7
+  * Heroku
+  * HTML5
+  * CSS3
+  * Bootstrap
 
-### Due
-Monday, March 9, 2020
+### Development Details
 
-### Student
+#### Developer
 Pam Kelly at [esq.kelly@gmail.com](mailto:esq.kelly@gmail.com)
 
 Full-Stack Coding Bootcamp through UCB Extension
 
-### Completed Assignment URLs
-#### Github repository
-[Github Link](https://github.com/PLKGIT/friend-finder) at https://github.com/PLKGIT/friend-finder
+#### GitHub Repository
+[GitHub](https://github.com/PLKGIT/friend-finder) at https://github.com/PLKGIT/friend-finder
+
 #### Deployed Application
-https://evening-forest-27993.herokuapp.com/
-#### Friend Finder on Portfolios
+[Friend Finder](https://evening-forest-27993.herokuapp.com/) at https://evening-forest-27993.herokuapp.com/
+
+#### Portfolio
 [Professional Porfolio](https://www.pamkelly.com/portdev.html) at https://www.pamkelly.com/portdev.html
-[Bootstrap Portfolio](https://plkgit.github.io/Bootstrap-Portfolio/portfolio.html) at https://plkgit.github.io/Bootstrap-Portfolio/portfolio.html
 
 
 Copyright &copy; 2020 Pamela L. Kelly
